@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 443;
 app.use('/upload', express.static('upload'))
 // sendFile will go here
 app.get('/', function(req, res) {
